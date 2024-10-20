@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <style>
+        body {
+            margin: 0;
+            /* display: flex; */
+        }
+
+        /* img */
+        img {
+            width: 90%;
+            height: 80%;
+            border-radius: 5px;
+        }
+
+        /* gift-img  */
+        .gift-img {
+            margin: 0 8%;
+        }
+
+        h3 {
+            color: darkblue;
+        }
+
+        /* section-center */
+
+        .section-center {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            margin-top: 5%;
+        }
+
+        /* deadline */
+        .deadline {
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        span {
+            margin: 5px;
+        }
+
+        /* deadline-format */
+        .deadline-format {
+            background-color: black;
+            color: white;
+            margin: 20px;
+            width: 6rem;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        @media screen and (max-width:800px) {
+            .section-center {
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+
+            }
+
+            .gift-ionf {
+                margin: 0 30px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section-center">
+        <!-- image -->
+        <article class="gift-img">
+            <img src="./image/gift.jpeg" alt="">
+        </article>
+        <!-- info -->
+        <article class="gift-ionf">
+            <h3>old iphone giveaway</h3>
+            <h4 class="giveaway">
+                giveaway ends on Sunday , 24 April 2023, 10:00am
+            </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident officia ut, hic cum sint laboriosam
+                esse aliquam vel nemo mollitia!</p>
+
+            <div class="deadline">
+                <!-- days -->
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="days">34</h4>
+                        <span>days</span>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- days -->
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="hours">34</h4>
+                        <span>hours</span>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- days -->
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="mins">34</h4>
+                        <span>mins</span>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- days -->
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="secs">34</h4>
+                        <span>secs</span>
+                    </div>
+                </div>
+                <!-- end of item -->
+            </div>
+        </article>
+    </section>
+    <!-- javascript -->
+    <script src="./Js/script.js"></script>
+</body>
+
+</html>

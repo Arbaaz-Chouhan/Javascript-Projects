@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+/* btn container */
+.btn-container {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.filter-btn {
+  color: brown;
+  width: 10rem;
+  font-size: 20px;
+  border-color: salmon;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.filter-btn:hover {
+  background-color: hotpink;
+}
+
+/* title */
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* unrline */
+.unrline {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: gold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+}
+
+/* photo */
+
+.photo {
+  width: 15em;
+  border-radius: 10px;
+}
+
+/* section-center */
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+/* menu item */
+
+.menu-item {
+  display: grid;
+  gap: 1rem 2rem;
+  max-width: 25rem;
+  display: grid;
+  grid-template-columns: 1fr  ;
+  align-items: center;
+}
+
+/* price */
+.price {
+  color: darkcyan;
+}
+
+.item-intro header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 300px) {
+  .menu-item {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+
+  .photo {
+    height: 175px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photo {
+    height: 150px;
+  }
+}

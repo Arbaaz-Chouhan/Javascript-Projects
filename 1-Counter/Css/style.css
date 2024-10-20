@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: chocolate;
+}
+ 
+span{
+    font-size: 60px;
+    text-align: center;
+    margin-left: 40px;
+    margin-bottom:auto;
+}
+.btn-container{
+    margin-right: 5px;
+    padding: 10px 1s5px;
+}
